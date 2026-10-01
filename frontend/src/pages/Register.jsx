@@ -49,18 +49,6 @@ function Register() {
             <p className="register-subtitle">
               Join MovieRec and start discovering
             </p>
-
-            {/* GOOGLE */}
-            <button className="register-google-button">
-              <span className="google-icon">G</span>
-              Sign up with Google
-            </button>
-
-            {/* DIVIDER */}
-            <div className="register-divider">
-              <span>or create with email</span>
-            </div>
-
             {/* FULL NAME */}
             <label>Full Name</label>
 

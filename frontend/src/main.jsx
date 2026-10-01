@@ -4,16 +4,19 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./index.css";
 
-import Login from "./pages/Login.jsx";
-import Register from "./pages/Register.jsx";
+// import Login from "./pages/Login.jsx";
+// import Register from "./pages/Register.jsx";
+import Search from "./pages/Search.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Search />} />
+        {/* <Route path="/" element={<Login />} />
 
-        <Route path="/register" element={<Register />} />
+        <Route path="/register" element={<Register />} /> */}
+
       </Routes>
     </BrowserRouter>
   </StrictMode>,
