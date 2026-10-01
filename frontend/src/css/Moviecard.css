@@ -1,0 +1,159 @@
+/* =========================
+   MOVIE CARD
+========================= */
+
+.movie-card {
+  width: 100%;
+
+  background: #111119;
+
+  border: 1px solid #252531;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  transition: 0.25s;
+
+  box-sizing: border-box;
+}
+
+.movie-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #3a3a48;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================
+   POSTER
+========================= */
+
+.movie-poster-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  height: 355px;
+
+  overflow: hidden;
+
+  background: #08080d;
+}
+
+.movie-poster {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+/* =========================
+   RATING
+========================= */
+
+.movie-rating {
+  position: absolute;
+
+  top: 14px;
+
+  right: 12px;
+
+  color: #ffc42e;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  text-shadow: 0 1px 4px black;
+}
+
+/* =========================
+   INFO
+========================= */
+
+.movie-info {
+  padding: 20px;
+}
+
+.movie-info h3 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: 700;
+}
+
+.movie-year {
+  margin: 7px 0 15px;
+
+  color: #5e5e70;
+
+  font-size: 14px;
+}
+
+/* =========================
+   GENRES
+========================= */
+
+.movie-genres {
+  display: flex;
+
+  gap: 8px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 18px;
+}
+
+.genre-tag {
+  padding: 7px 12px;
+
+  border-radius: 18px;
+
+  background: #20202d;
+
+  color: #8989a5;
+
+  font-size: 11px;
+
+  border: 1px solid #292936;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.details-btn {
+  width: 100%;
+
+  height: 47px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #f21f4f;
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.details-btn:hover {
+  background: #ff315f;
+
+  transform: translateY(-1px);
+}
