@@ -45,17 +45,6 @@ function Login() {
 
             <p className="login-subtitle">Sign in to your MovieRec account</p>
 
-            {/* GOOGLE */}
-            <button className="google-button">
-              <span className="google-icon">G</span>
-              Continue with Google
-            </button>
-
-            {/* DIVIDER */}
-            <div className="divider">
-              <span>or sign in with email</span>
-            </div>
-
             {/* EMAIL */}
             <label>Email Address</label>
 
