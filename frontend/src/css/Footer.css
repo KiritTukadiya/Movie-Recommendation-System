@@ -1,0 +1,132 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  padding: 50px 8%;
+
+  background: #08080f;
+
+  border-top: 1px solid #1d1d27;
+
+  color: #858591;
+
+  box-sizing: border-box;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.footer-brand {
+  max-width: 340px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+.footer-logo span span {
+  color: #ff174f;
+}
+
+.footer-logo-icon {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ff174f;
+
+  color: white;
+
+  border-radius: 6px;
+
+  font-size: 10px;
+}
+
+.footer-brand p {
+  color: #777783;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+
+  margin: 0 0 12px;
+}
+
+.footer-brand .copyright {
+  color: #50505b;
+}
+
+/* =========================
+   FOOTER COLUMNS
+========================= */
+
+.footer-column {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 11px;
+
+  min-width: 130px;
+}
+
+.footer-column h3 {
+  color: white;
+
+  font-size: 14px;
+
+  margin: 0 0 7px;
+}
+
+.footer-column a,
+.footer-column span {
+  color: #777783;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  transition: 0.2s;
+}
+
+.footer-column a:hover {
+  color: #ff174f;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+  .footer {
+    flex-direction: column;
+
+    padding: 40px 7%;
+
+    gap: 35px;
+  }
+}
