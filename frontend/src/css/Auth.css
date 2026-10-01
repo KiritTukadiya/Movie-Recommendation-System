@@ -1,0 +1,1017 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #08070d;
+}
+
+
+/* ================================
+   FULL LOGIN PAGE
+================================ */
+
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #08070d;
+}
+
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.login-container {
+  width: min(1100px, 92vw);
+  height: min(650px, 90vh);
+
+  min-height: 560px;
+
+  display: flex;
+
+  overflow: hidden;
+
+  background: #08070d;
+}
+
+
+/* ================================
+   LEFT SIDE
+================================ */
+
+.login-left {
+  position: relative;
+
+  width: 38%;
+  height: 100%;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      rgba(10, 8, 14, 0.58),
+      rgba(10, 8, 14, 0.90)
+    ),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1000&q=80");
+
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* ================================
+   LOGO
+================================ */
+
+.login-logo {
+  position: absolute;
+
+  top: 38px;
+  left: 42px;
+
+  display: flex;
+  align-items: center;
+
+  color: white;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.login-logo > span span {
+  color: #f52b4d;
+}
+
+.logo-icon {
+  width: 27px;
+  height: 27px;
+
+  margin-right: 9px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background: #f52b4d;
+
+  color: white;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+/* ================================
+   LEFT CONTENT
+================================ */
+
+.login-left-content {
+  position: absolute;
+
+  top: 42%;
+  left: 42px;
+
+  transform: translateY(-50%);
+}
+
+.login-left-content h1 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 38px;
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.login-left-content h1 span {
+  color: #f52b4d;
+}
+
+.login-left-content p {
+  margin-top: 22px;
+  margin-bottom: 0;
+
+  color: #8c8793;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* ================================
+   MOVIE POSTERS
+================================ */
+
+.movie-posters {
+  position: absolute;
+
+  left: 42px;
+  bottom: 38px;
+
+  display: flex;
+
+  gap: 12px;
+}
+
+.poster {
+  width: 48px;
+  height: 68px;
+
+  border-radius: 6px;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.poster1 {
+  background-image:
+    url("https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=200&q=80");
+}
+
+.poster2 {
+  background-image:
+    url("https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=200&q=80");
+}
+
+.poster3 {
+  background-image:
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=200&q=80");
+}
+
+.poster4 {
+  background-image:
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=200&q=80");
+}
+
+
+/* ================================
+   RIGHT SIDE
+================================ */
+
+.login-right {
+  width: 62%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #08070d;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+.login-form {
+  width: 390px;
+}
+
+
+/* ================================
+   TITLE
+================================ */
+
+.login-form h2 {
+  margin: 0;
+
+  text-align: center;
+
+  color: #f4f3f5;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.login-subtitle {
+  margin: 10px 0 28px;
+
+  text-align: center;
+
+  color: #68636f;
+
+  font-size: 12px;
+}
+
+
+/* ================================
+   GOOGLE
+================================ */
+
+.google-button {
+  width: 100%;
+  height: 46px;
+
+  border: 1px solid #211e29;
+  border-radius: 8px;
+
+  background: #111017;
+
+  color: #d8d5dd;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.google-icon {
+  margin-right: 8px;
+
+  color: #4285f4;
+
+  font-weight: 700;
+}
+
+
+/* ================================
+   DIVIDER
+================================ */
+
+.divider {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 22px 0;
+
+  color: #48444f;
+
+  font-size: 10px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+
+  height: 1px;
+
+  flex: 1;
+
+  background: #1b1922;
+}
+
+.divider span {
+  padding: 0 12px;
+}
+
+
+/* ================================
+   LABEL
+================================ */
+
+.login-form > label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #77727e;
+
+  font-size: 10px;
+}
+
+
+/* ================================
+   INPUT
+================================ */
+
+.login-input {
+  width: 100%;
+  height: 46px;
+
+  display: block;
+
+  margin-bottom: 17px;
+
+  padding: 0 14px;
+
+  border: 1px solid #201d27;
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #0f0e15;
+
+  color: white;
+
+  font-size: 11px;
+}
+
+.login-input::placeholder {
+  color: #46424d;
+}
+
+.login-input:focus {
+  border-color: #302c38;
+}
+
+
+/* ================================
+   PASSWORD
+================================ */
+
+.password-box {
+  position: relative;
+
+  width: 100%;
+}
+
+.password-box .login-input {
+  padding-right: 45px;
+}
+
+.eye-button {
+  position: absolute;
+
+  right: 5px;
+  top: 0;
+
+  width: 38px;
+  height: 46px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #57535f;
+
+  cursor: pointer;
+}
+
+
+/* ================================
+   OPTIONS
+================================ */
+
+.login-options {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+
+.remember-me {
+  display: flex !important;
+  align-items: center;
+
+  gap: 7px;
+
+  margin: 0 !important;
+
+  color: #625e69 !important;
+
+  font-size: 10px !important;
+}
+
+.remember-me input {
+  width: 13px;
+  height: 13px;
+
+  margin: 0;
+
+  accent-color: #f52b4d;
+}
+
+.forgot-password {
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #f52b4d;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+
+/* ================================
+   SIGN IN
+================================ */
+
+.signin-button {
+  width: 100%;
+  height: 46px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #f52b4d;
+
+  color: white;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.signin-button:hover {
+  background: #ff3658;
+}
+
+
+/* ================================
+   GUEST
+================================ */
+
+.guest-button {
+  display: block;
+
+  margin: 20px auto 0;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #5a5662;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+
+/* ================================
+   SIGN UP
+================================ */
+
+.signup-text {
+  margin: 28px 0 0;
+
+  text-align: center;
+
+  color: #4f4b56;
+
+  font-size: 10px;
+}
+
+.signup-text a {
+  color: #f52b4d;
+
+  text-decoration: none;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 800px) {
+
+  .login-container {
+    width: 100%;
+    height: 100vh;
+
+    min-height: 100vh;
+  }
+
+  .login-left {
+    display: none;
+  }
+
+  .login-right {
+    width: 100%;
+  }
+
+  .login-form {
+    width: min(390px, 85%);
+  }
+}
+/* =========================================
+   REGISTER PAGE
+========================================= */
+
+.register-page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #08070d;
+}
+
+
+/* =========================================
+   REGISTER CONTAINER
+========================================= */
+
+.register-container {
+  width: min(1200px, 92vw);
+  height: 800px;
+
+  display: flex;
+
+  overflow: hidden;
+
+  background: #08070d;
+}
+
+
+/* =========================================
+   REGISTER LEFT
+========================================= */
+
+.register-left {
+  position: relative;
+
+  width: 42%;
+  height: 100%;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      rgba(8, 7, 13, 0.50),
+      rgba(8, 7, 13, 0.92)
+    ),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1000&q=80");
+
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.register-logo {
+  position: absolute;
+
+  top: 48px;
+  left: 52px;
+
+  display: flex;
+  align-items: center;
+
+  color: white;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.register-logo > span span {
+  color: #f52b4d;
+}
+
+.register-logo-icon {
+  width: 34px;
+  height: 34px;
+
+  margin-right: 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #f52b4d;
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.register-left-content {
+  position: absolute;
+
+  top: 45%;
+  left: 52px;
+
+  transform: translateY(-50%);
+}
+
+.register-left-content h1 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 46px;
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.register-left-content h1 span {
+  color: #f52b4d;
+}
+
+.register-left-content p {
+  margin-top: 24px;
+
+  color: #8c8793;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.register-features {
+  position: absolute;
+
+  left: 52px;
+  bottom: 48px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px 45px;
+
+  color: #716c78;
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.register-right {
+  width: 58%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #08070d;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.register-form {
+  width: 500px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.register-form h2 {
+  margin: 0;
+
+  text-align: center;
+
+  color: #f4f3f5;
+
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.register-subtitle {
+  margin: 10px 0 28px;
+
+  text-align: center;
+
+  color: #68636f;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   GOOGLE
+========================================= */
+
+.register-google-button {
+  width: 100%;
+  height: 52px;
+
+  border: 1px solid #211e29;
+  border-radius: 9px;
+
+  background: #111017;
+
+  color: #d8d5dd;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.google-icon {
+  margin-right: 10px;
+
+  color: #4285f4;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.register-divider {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 22px 0;
+
+  color: #48444f;
+
+  font-size: 11px;
+}
+
+.register-divider::before,
+.register-divider::after {
+  content: "";
+
+  height: 1px;
+
+  flex: 1;
+
+  background: #1b1922;
+}
+
+.register-divider span {
+  padding: 0 14px;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+.register-form > label:not(.terms-label) {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #77727e;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.register-input {
+  width: 100%;
+  height: 50px;
+
+  display: block;
+
+  margin-bottom: 17px;
+
+  padding: 0 16px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #201d27;
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #0f0e15;
+
+  color: white;
+
+  font-size: 13px;
+}
+
+.register-input::placeholder {
+  color: #46424d;
+}
+
+.register-input:focus {
+  border-color: #302c38;
+}
+
+
+/* =========================================
+   PASSWORD
+========================================= */
+
+.register-password-box {
+  position: relative;
+
+  width: 100%;
+}
+
+.register-password-box .register-input {
+  padding-right: 45px;
+}
+
+.register-eye-button {
+  position: absolute;
+
+  right: 4px;
+  top: 0;
+
+  width: 40px;
+  height: 50px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #57535f;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   TERMS
+========================================= */
+
+.terms-label {
+  display: flex !important;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 3px;
+  margin-bottom: 18px !important;
+
+  color: #625e69 !important;
+
+  font-size: 10px !important;
+}
+
+.terms-label input {
+  width: 13px;
+  height: 13px;
+
+  margin: 0;
+
+  flex-shrink: 0;
+
+  accent-color: #f52b4d;
+}
+
+.terms-label a {
+  color: #f52b4d;
+
+  text-decoration: none;
+}
+
+
+/* =========================================
+   CREATE ACCOUNT BUTTON
+========================================= */
+
+.create-account-button {
+  width: 100%;
+  height: 52px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #f52b4d;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.create-account-button:hover {
+  background: #ff3658;
+}
+
+
+/* =========================================
+   LOGIN LINK
+========================================= */
+
+.register-login-text {
+  margin: 22px 0 0;
+
+  text-align: center;
+
+  color: #4f4b56;
+
+  font-size: 11px;
+}
+
+.register-login-text a {
+  color: #f52b4d;
+
+  text-decoration: none;
+}
+
+.register-login-text a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .register-container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .register-left {
+    display: none;
+  }
+
+  .register-right {
+    width: 100%;
+  }
+
+  .register-form {
+    width: min(500px, 85%);
+  }
+}
